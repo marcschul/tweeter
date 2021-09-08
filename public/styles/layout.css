@@ -21,6 +21,18 @@ body {
   font-family: Source-Sans-Pro, Sans-Serif;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: #f4f1ec;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
