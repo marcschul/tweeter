@@ -18,8 +18,9 @@ nav {
 .column {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  padding-top: 25px;
 }
 
 .bungee-font {
@@ -29,4 +30,8 @@ nav {
 
 .red {
   color: red;
+}
+
+.arrow {
+  padding-top: 5px;
 }
