@@ -5,9 +5,9 @@ $(document).ready(function() {
     const sum = 140 - count;
 
     if (sum < 0) {
-      $("output[name='counter']").val(sum).css({color:'red'});
+      $(".counter").val(sum).css({color:'red'});
     } else {
-      $("output[name='counter']").val(sum);
+      $(".counter").val(sum);
     }
   })
 
