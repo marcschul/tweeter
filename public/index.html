@@ -10,14 +10,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@1,300;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com">
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/footer.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
@@ -36,7 +39,7 @@
     </nav>
 
     <!-- Header -->
-    <header>
+    <header class="general">
       <div>
           <img src="/images/profile-hex.png"> 
       </div>
@@ -46,7 +49,7 @@
     </header>
     
     <!-- Page-specific (main) content here -->
-    <main class="container">
+    <main>
 
         <section class="new-tweet">
           <h2>Compose Tweet</h2>
@@ -60,11 +63,37 @@
           </form>
         </section>
 
-        <article class="tweet-container">
+        <article class="tweet-container tweet">
+
+          <header class="container">
+            <section>
+              <i class="fas fa-user"></i>
+              <span>Name</span>
+            </section>
+            <span>@Marc</span>  
+          </header>
+
+          <section class="container">
+            <form>
+              <p>Hello World!</p>
+            </form>
+          </section>
+
+          <footer class="container">
+            <span class="need_to_be_rendered" datetime="2016-07-07T09:24:17Z"></span>
+            <section class="icons">
+              <a href="www.google.ca"><i class="fas fa-flag"></i></a>
+              <a href="www.google.ca"><i class="fas fa-retweet"></i></a>
+              <a href="www.google.ca"><i class="fas fa-heart"></i></a>
+            </section>
+          </footer>
+
         </article>
+
     </main>
 
     <!-- App Javascript -->
     <script src="scripts/composer-char-counter.js"></script>
+    <script>timeago.render(document.querySelectorAll('.need_to_be_rendered'));</script>
   </body>
 </html>
