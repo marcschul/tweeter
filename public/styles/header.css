@@ -1,4 +1,4 @@
-header {
+header.general {
   height: 400px;
   width: 100%;
   display: flex;
@@ -7,4 +7,10 @@ header {
   align-items: center;
   background-color: #9EADE1;
   background-image: url(../images/notebook-dark.png);
+}
+
+article.tweet header {
+  display: flex;
+  justify-content: space-between;
+  color: #545149;
 }
