@@ -22,12 +22,32 @@ body {
   font-family: Source-Sans-Pro, Sans-Serif;
 }
 
-.container {
+main {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-self: center;
   background-color: #f4f1ec;
   width: 90%;
-  align-self: center;
+}
+
+.tweet-container {
+  display: flex;
+  flex-direction: column;
+  border: solid;
+  background-color: #f4f1ec;
+  border-color: #545149;
+  padding: 1%;
+}
+
+.tweet-container:hover {
+  box-shadow: 10px 10px #c9cbdf;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0% 2% ;
 }
 
 /*
