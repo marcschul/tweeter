@@ -62,40 +62,15 @@
             </div>
           </form>
         </section>
-
-        <!-- Tweet 1 -->
-        <article class="tweet-container tweet">
-
-          <header class="container">
-            <section>
-              <i class="fas fa-user"></i>
-              <span id="userName">Rhoda Jacobs</span>
-            </section>
-            <span id="tweetName">@MrsJacobs</span>  
-          </header>
-
-          <section class="container">
-            <form>
-              <p>Hello World!</p>
-            </form>
-          </section>
-
-          <footer class="container">
-            <span class="need_to_be_rendered" datetime="2016-07-07T09:24:17Z"></span>
-            <section class="icons">
-              <a href="www.google.ca"><i class="fas fa-flag"></i></a>
-              <a href="www.google.ca"><i class="fas fa-retweet"></i></a>
-              <a href="www.google.ca"><i class="fas fa-heart"></i></a>
-            </section>
-          </footer>
-
-        </article>
-
-
+        
     </main>
 
     <!-- App Javascript -->
     <script src="scripts/composer-char-counter.js"></script>
-    <script>timeago.render(document.querySelectorAll('.need_to_be_rendered'));</script>
+    <script>
+      $(document).ready(function () {
+        timeago.render(document.querySelectorAll('.need_to_be_rendered'));
+      });
+    </script>
   </body>
 </html>
