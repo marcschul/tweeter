@@ -38,7 +38,16 @@ main {
   border: solid;
   background-color: #f4f1ec;
   border-color: #545149;
-  padding: 1%;
+  padding: 2% 1%;
+}
+
+#tweetName {
+  color: #C4C4C4;
+}
+
+#userName {
+  font-family: Source-Sans-Pro;
+  font-size: 1.25em;
 }
 
 .tweet-container:hover {
