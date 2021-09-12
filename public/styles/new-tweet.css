@@ -37,3 +37,14 @@
   color: #545149;
   font-size: 1.25em;
 }
+
+.avatar {
+  display: flex;
+  align-items: center;
+}
+
+.user-name {
+  font-family: Source-Sans-Pro;
+  font-size: 1.25em;
+  padding: 0.5em;
+}
