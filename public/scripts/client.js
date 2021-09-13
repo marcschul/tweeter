@@ -59,11 +59,24 @@ return $tweet;
 
 const renderTweets = function(tweets) {
   for (const tweet of tweets) {
-    console.log(tweet)
     $('#tweets-container').append(createTweetElement(tweet));
   }
 };
 
+const ajaxSubmit = function () {
+  $("form").submit(function(event) {
+    event.preventDefault();
+    const text = $(this).serialize();
+    $.ajax({
+      method: "POST",
+      url: "/tweets/",
+      data: text
+    });
+    $(this).trigger("reset");
+  });
+}
+
 $(document).ready(function() {
   renderTweets(data);
+  ajaxSubmit();
 });
