@@ -7,7 +7,7 @@ $(document).ready(function() {
     if (sum < 0) {
       $(".counter").val(sum).css({color:'red'});
     } else {
-      $(".counter").val(sum);
+      $(".counter").val(sum).css({color: '#545149'});
     }
   })
 
