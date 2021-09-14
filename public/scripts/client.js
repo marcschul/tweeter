@@ -53,6 +53,15 @@ $(document).ready(function() {
   const ajaxSubmit = function() {
     $("form").submit(function(event) {
       event.preventDefault();
+
+      if ($("#tweet-text").val().length > 140) {
+        return alert('140+');
+      }
+
+      if ($("#tweet-text").val().length <= 0) {
+        return alert('<0');
+      }
+
       const text = $(this).serialize();
       $.ajax({
         method: "POST",
@@ -63,7 +72,6 @@ $(document).ready(function() {
       $(this).trigger("reset");
     });
   };
-  
   
   loadTweets();
   ajaxSubmit();
