@@ -1,5 +1,11 @@
 $(document).ready(function() {
 
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
+
   const createTweetElement = function(tweet) {
     let $tweet =  $(`
     <article class="tweet-container tweet">
@@ -14,7 +20,7 @@ $(document).ready(function() {
     
       <section class="container">
         <form>
-          <p>${tweet.content.text}</p>
+          <p>${escape(tweet.content.text)}</p>
         </form>
       </section>
     
