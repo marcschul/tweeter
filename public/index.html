@@ -52,9 +52,9 @@
     <main id="tweets-container">
       
         <section class="new-tweet">
-          <h2>Compose Tweet</h2>
+          <span class="error">❌ Error: Invalid Tweet. Cannot be empty or greater than 140 characters. ❌</span>
           <form class="tweet-form" method="POST" action="/tweets/">
-            <label for="tweet-text"><b class="humming">What are you humming about?</b></label>
+            <label for="tweet-text" class="label"><b class="humming">What are you humming about?</b></label>
             <textarea name="text" id="tweet-text"></textarea>
             <div class="tweet-button">
               <button class="button1" type="submit">Tweet</button>
