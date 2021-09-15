@@ -52,3 +52,22 @@
 .counter {
   color: #545149;
 }
+
+#tweetName {
+  color: #C4C4C4;
+}
+
+.error {
+  display: flex;
+  align-self: center;
+  color: red;
+  margin: 1em;
+  padding: 0.5em;
+  border: solid;
+
+}
+
+.label {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
