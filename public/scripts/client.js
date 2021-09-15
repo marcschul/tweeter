@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    
+  $(".error").hide();
 
   const escape = function (str) {
     let div = document.createElement("div");
@@ -61,11 +63,11 @@ $(document).ready(function() {
       event.preventDefault();
 
       if ($("#tweet-text").val().length > 140) {
-        return alert('140+');
+        return $(".error").show(500);
       }
 
       if ($("#tweet-text").val().length <= 0) {
-        return alert('<0');
+        return $(".error").show(500);
       }
 
       const text = $(this).serialize();
@@ -75,6 +77,7 @@ $(document).ready(function() {
         data: text
       });
       reloadTweet();
+      $(".error").hide(250);
       $(this).trigger("reset");
     });
   };
