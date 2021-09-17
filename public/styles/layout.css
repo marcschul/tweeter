@@ -10,10 +10,6 @@ html {
   box-sizing: inherit;
 }
 
-/*
- * Global layout
- */
-
 body {
   display:flex;
   flex-direction: column;
@@ -50,4 +46,18 @@ main {
   display: flex;
   justify-content: space-between;
   padding: 0% 2% ;
+}
+
+@media (min-width: 1024px) {
+  body {
+    flex-direction: row;
+  }
+
+  header {
+    margin: 4%;
+  }
+
+  main {
+    margin: 4%;
+  }
 }
