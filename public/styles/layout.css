@@ -35,7 +35,7 @@ main {
   background-color: #f4f1ec;
   border-color: #545149;
   padding: 2% 1%;
-  margin: 1% 0%;
+  margin: 15px 0px;
 }
 
 .tweet-container:hover {
@@ -45,6 +45,12 @@ main {
 .container {
   display: flex;
   justify-content: space-between;
+  padding: 0% 2% ;
+}
+
+.container-text {
+  display: flex;
+  word-break: break-all;
   padding: 0% 2% ;
 }
 
