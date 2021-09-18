@@ -20,14 +20,12 @@ $(document).ready(function() {
         <span id="tweetName">${tweet.user.handle}</span>  
       </header>
     
-      <section class="container">
-        <form>
+      <section class="container-text">
           <p>${escape(tweet.content.text)}</p>
-        </form>
       </section>
     
       <footer class="container">
-        <span class="need_to_be_rendered" datetime="2016-07-07T09:24:17Z"></span>
+        <span>${timeago.format(tweet.created_at)}</span>
         <section class="icons">
           <a href="www.google.ca"><i class="fas fa-flag"></i></a>
           <a href="www.google.ca"><i class="fas fa-retweet"></i></a>
