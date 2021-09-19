@@ -43,6 +43,10 @@ nav {
   animation-iteration-count: infinite;
 }
 
+nav div.column {
+  cursor: pointer;
+}
+
 @keyframes example {
   0% {color: red; left: 0px; top: 0px;}
   50% {color: white; left: 0px; top: 7px;}
