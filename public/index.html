@@ -54,7 +54,7 @@
     <main id="tweets-container">
       
         <section class="new-tweet">
-          <span class="error">❌ Error: Invalid Tweet. Cannot be empty or greater than 140 characters. ❌</span>
+          <span class="error">❌ Error: Tweet empty or greater than 140 characters ❌</span>
           <form class="tweet-form" method="POST" action="/tweets/">
             <label for="tweet-text" class="label"><b class="humming">What are you humming about?</b></label>
             <textarea name="text" id="tweet-text"></textarea>
@@ -77,6 +77,6 @@
     <script src="scripts/composer-char-counter.js"></script>
     <script src="scripts/new-tweet-toggle.js"></script>
     <script src="scripts/scroll-up-toggle.js"></script>
-    
+
   </body>
 </html>
