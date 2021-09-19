@@ -1,3 +1,4 @@
+// toggle the scroll to top button and hides "Write a new tweet"
 $(document).ready(function() {
   $('.button-up').hide();
 
@@ -15,4 +16,4 @@ $(document).ready(function() {
   $('.button-up').on('click', function() {
     window.scrollTo(0, 0);
   });
-})
+});

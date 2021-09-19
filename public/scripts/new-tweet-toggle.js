@@ -1,3 +1,4 @@
+// Toggle tweet's input field when clicking on "Write a new tweet"
 $(document).ready(function() {
   let state = true;
   $('nav div.column').on("click", function() {
@@ -6,7 +7,7 @@ $(document).ready(function() {
       state = false;
     } else {
       $('form.tweet-form').show(1000);
-      state = true; 
+      state = true;
     }
-  })
+  });
 });

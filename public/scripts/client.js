@@ -1,8 +1,9 @@
+// Main client JS file.
 $(document).ready(function() {
     
   $(".error").hide();
 
-  const escape = function (str) {
+  const escape = function(str) {
     let div = document.createElement("div");
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;

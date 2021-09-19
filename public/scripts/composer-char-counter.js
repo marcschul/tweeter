@@ -1,3 +1,4 @@
+// Count and display tweet's length in output counter.
 $(document).ready(function() {
 
   $('#tweet-text').on('input', function() {
@@ -9,6 +10,6 @@ $(document).ready(function() {
     } else {
       $(".counter").val(sum).css({color: '#545149'});
     }
-  })
+  });
 
 });
