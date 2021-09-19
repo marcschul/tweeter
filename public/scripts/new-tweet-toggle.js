@@ -7,6 +7,7 @@ $(document).ready(function() {
       state = false;
     } else {
       $('form.tweet-form').show(1000);
+      $('#tweet-text').focus();
       state = true;
     }
   });
