@@ -52,7 +52,7 @@ $(document).ready(function() {
   
   const reloadTweet = function() {
     $.get("/tweets", function(tweetData) {
-      let tweetObj = tweetData[tweetData.length - 1];
+      const tweetObj = tweetData[tweetData.length - 1];
       $('.tweets').prepend(createTweetElement(tweetObj));
     });
   };
@@ -69,15 +69,24 @@ $(document).ready(function() {
         return $(".error").show(500);
       }
 
-      const text = $(this).serialize();
+      const form = $(this);
+
+      const text = form.serialize();
+      
       $.ajax({
         method: "POST",
         url: "/tweets/",
         data: text
+      })
+      .then(function(data) {
+        reloadTweet();
+        $(".error").hide(250);
+        form.trigger("reset");
+      })
+      .catch(function(error) {
+        console.log(error);
       });
-      reloadTweet();
-      $(".error").hide(250);
-      $(this).trigger("reset");
+
     });
   };
   
