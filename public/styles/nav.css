@@ -52,3 +52,16 @@ nav div.column {
   50% {color: white; left: 0px; top: 7px;}
   100% {color: red; left: 0px; top: 0px;}
 }
+
+@media (max-width: 1024px) {
+  .bungee-font {
+    font-size: 1.25em;
+  }
+  nav div.column {
+    font-size: 0.6em;
+  }
+  nav {
+    height: 90px;
+    position: sticky;
+  }
+}

@@ -14,3 +14,20 @@ article.tweet header {
   justify-content: space-between;
   color: #545149;
 }
+
+@media (max-width: 1024px) {
+  h2 {
+    font-size: 1.25em;
+  }
+  .profile-pic {
+    width: 75%;
+  }
+  .center-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header.general {
+    height: 300px;
+  }
+}

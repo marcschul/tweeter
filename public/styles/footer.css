@@ -14,3 +14,9 @@ article.tweet a {
   color: #4056A1;
 }
 
+@media (max-width: 1024px) {
+  article.tweet footer {
+    font-size: 0.5em;
+  }
+}
+

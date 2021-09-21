@@ -71,3 +71,24 @@
   padding-top: 0.5em;
   padding-bottom: 0.5em;
 }
+
+@media (max-width: 1024px) {
+  .humming {
+    font-size: 0.8em;
+  }
+  .user-name {
+    font-size: 1em;
+  }
+  .error {
+    font-size: 0.75em;
+  }
+  #tweetName {
+    font-size: 0.75em;
+  }
+  .container-text {
+    font-size: 0.75em;
+  }
+  .avatar-image {
+    width: 25%;
+  }
+}
