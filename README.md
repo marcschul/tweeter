@@ -15,3 +15,7 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+## Screenshots
+!["Desktop View"](https://github.com/marcschul/tweeter/blob/master/docs/desktop.png?raw=true)
+!["Phone View"](https://github.com/marcschul/tweeter/blob/master/docs/phone.png?raw=true)
